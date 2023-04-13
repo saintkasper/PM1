@@ -1,0 +1,96 @@
+﻿<Window x:Class="_18variant.Windows.AddProduct"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_18variant.Windows"
+        mc:Ignorable="d"
+        FontFamily="Courier New"
+        SizeToContent="WidthAndHeight"
+        Title="Добавление продукта"
+        Closed="Window_Closed">
+    <Grid Height="650"
+          Width="600">
+        <StackPanel Width="550"
+                    Height="600"
+                    VerticalAlignment="Center"
+                    HorizontalAlignment="Center">
+            <StackPanel VerticalAlignment="Center"
+                        Height="400">
+                <StackPanel Width="450"
+                            HorizontalAlignment="Center"
+                            Orientation="Horizontal">
+                    <TextBlock>Название</TextBlock>
+                    <Label></Label>
+                    <TextBox x:Name="tbProductName"
+                             Width="200"
+                             Height="25"></TextBox>
+                </StackPanel>
+                <Label></Label>
+                <StackPanel Width="450"
+                            HorizontalAlignment="Center"
+                            Orientation="Horizontal">
+                    <TextBlock>Минимальная стоимость</TextBlock>
+                    <Label></Label>
+                    <TextBox x:Name="tbCost"
+                             Width="200"
+                             Height="25"></TextBox>
+                </StackPanel>
+                <Label></Label>
+                <StackPanel Width="450"
+                            HorizontalAlignment="Center"
+                            Orientation="Horizontal">
+                    <ComboBox Name="cbTypeProduct"
+                              Width="450"
+                              Height="25">
+                        <ComboBoxItem>Колесо</ComboBoxItem>
+                        <ComboBoxItem>Запаска</ComboBoxItem>
+                        <ComboBoxItem>Шина</ComboBoxItem>
+                        <ComboBoxItem>Диск</ComboBoxItem>
+                    </ComboBox>
+                </StackPanel>
+                <Label></Label>
+                <StackPanel Width="450"
+                            HorizontalAlignment="Center"
+                            Orientation="Horizontal">
+                    <TextBlock>Количество людей</TextBlock>
+                    <Label></Label>
+                    <TextBox x:Name="tbQuantity"
+                             Width="200"
+                             Height="25"></TextBox>
+                </StackPanel>
+                <Label></Label>
+                <StackPanel Width="450"
+                            HorizontalAlignment="Center"
+                            Orientation="Horizontal">
+                    <TextBlock>Номер цеха</TextBlock>
+                    <Label></Label>
+                    <TextBox x:Name="tbNumber"
+                             Width="200"
+                             Height="25"></TextBox>
+                </StackPanel>
+                <Label></Label>
+                <StackPanel Width="450"
+                            HorizontalAlignment="Center"
+                            Orientation="Horizontal">
+                    <TextBlock>Статус товара</TextBlock>
+                    <Label></Label>
+                    <TextBox x:Name="tbStatus"
+                             Width="200"
+                             Height="25"></TextBox>
+                </StackPanel>
+                <Label></Label>
+                <StackPanel>
+                    <Button x:Name="btnAdd"
+                            Background="LightGray"
+                            BorderBrush="#FFA163F5"
+                            Foreground="#FFA163F5"
+                            Width="450"
+                            Height="30"
+                            Click="btnAdd_Click">Добавить</Button>
+                </StackPanel>
+                
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>
